@@ -14,17 +14,6 @@ This portfolio highlights:
 
 ---
 
-
-## 🛠 Tech Stack
-
-- **Languages:** C++, Python, JavaScript, TypeScript  
-- **Frontend:** React, Next.js, Tailwind CSS  
-- **Backend:** Node.js, Express  
-- **Databases:** MongoDB, PostgreSQL, MySQL  
-- **ML/DL:** PyTorch, Deep Learning, Computer Vision  
-
----
-
 ## 📌 Purpose
 
 This repository serves as:
