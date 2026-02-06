@@ -1,7 +1,7 @@
 export const profileData = {
   name: 'Nahian Chowdhury',
   title: 'Full Stack Developer | Competitive Programmer',
-  avatar: '/nahian.png',
+  avatar: '/nahian.jpg',
   email: 'nahianchowdhury00777@gmail.com',
   phone: '+880-1756737742',
   birthday: 'March 01, 2001',
@@ -238,131 +238,60 @@ export const contactData = {
   phone: '+880 1756737742',
   location: 'Chattogram, Bangladesh',
   mapEmbedUrl:
-    'https://www.google.com/maps/place/Chattogram,+Bangladesh/@22.3576296,91.6542183,11z/data=!3m1!4b1!4m6!3m5!1s0x30acd8a64095dfd3:0x5015cc5bcb6905d9!8m2!3d22.3752075!4d91.8348606!16zL20vMDIxajM4?hl=en&entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.8708166240136!2d91.78318131536155!3d22.356851646857955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8839b5e4d91%3A0x8f5f0e8f2a4b6d94!2sChattogram%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1700000000000',
 }
 
 export const galleryItems = [
   {
     id: 1,
-    title: "ICPC Asia Dhaka Regional 2025",
-    description: "Competing as Team Winter_Is_Coming, we faced off against the best teams in the region. We managed to secure 37th place out of 313 teams in a high-pressure onsite environment at the Dhaka Regional.",
-    image: "gallary/ICPC_BUBT.jpeg"
+    title: "CUET Inter-University Programming Contest 2022",
+    description: "My very first inter-university programming contest experience. Participating in CUET IUPC 2022 marked the beginning of my competitive programming journey and helped me understand onsite contest dynamics and teamwork under pressure.",
+    image: "gallary/CUET_2022.jpg"
   },
   {
     id: 2,
-    title: "ICPC Asia Dhaka Regional 2024",
-    description: "My first experience at the ICPC Regional level with Team CUET_Ternary_Bunch. We ranked 142nd out of 400 teams, which was a huge learning milestone in my competitive programming career.",
-    image: "gallary/ICPC_DIU.jpg"
+    title: "CUET Inter-University Programming Contest 2022",
+    description: "Another moment from the CUET IUPC 2022, capturing my early competitive programming days. This contest played a key role in building confidence and motivating me to pursue competitive programming more seriously.",
+    image: "gallary/CUET_2022_2.jpg"
   },
   {
     id: 3,
-    title: "Prize Giving - Bangladesh Blockchain Olympiad 2025",
-    description: "We participated as Team CUET_R2S4. Our project was Finoly, a financial assistant system featuring gamified learning and an AI chatbot. We secured the 3rd place Bronze Medal; the ceremony in August showed us receiving the award from the honorable guests.",
-    image: "gallary/BCOLBD1.JPG"
+    title: "CUET Intra-University Programming Contest 2023",
+    description: "Participated in the CUET Intra-University Programming Contest as an individual contestant from Batch 20. Achieved **2nd Runner-Up**, demonstrating consistent algorithmic thinking and competitive performance among peers.",
+    image: "gallary/CUET_Individual.jpg"
   },
   {
     id: 4,
-    title: "Prize Giving - Bangladesh Blockchain Olympiad 2025",
-    description: "We participated as Team CUET_R2S4. Our project was Finoly, a financial assistant system featuring gamified learning and an AI chatbot. We secured the 3rd place Bronze Medal; the ceremony in August showed us receiving the award from the honorable guests.",
-    image: "gallary/BCOLBD2.JPG"
+    title: "Premier University Divisional IUPC 2024",
+    description: "Competed as Team CUET_3_Sto00ges in the Premier University Divisional Inter-University Programming Contest 2024, where we secured **2nd Runner-Up**. The contest highlighted our strong problem-solving ability and effective teamwork in a competitive onsite environment.",
+    image: "gallary/PU_2024.jpg"
   },
   {
     id: 5,
-    title: "DU AI Challenge - Robotronics Fest",
-    description: "Our team CUET_RSCube took part in this intense AI challenge. We worked on Object Detection in drone imagery and were thrilled to be ranked 1st out of over 50 competing teams.",
-    image: "gallary/DU_AI.png"
+    title: "UIU Inter-University Programming Contest 2025",
+    description: "Represented CUET at the UIU Inter-University Programming Contest 2025. It was my first time competing in Dhaka, offering an exciting onsite experience and exposure to a large-scale competitive programming environment alongside teams from across the country.",
+    image: "gallary/UIU_2025.jpg"
   },
   {
     id: 6,
-    title: "Champions - CoU IUPC 2025",
-    description: "Representing CUET as Team EL_Diablo at the Comilla University CSE Fest, we had a great run and secured the 1st position out of 40 teams in the divisional programming contest.",
-    image: "gallary/Cou1.jpg"
+    title: "Cumilla University Inter-University Programming Contest 2025",
+    description: "Participated in the Cumilla University Inter-University Programming Contest 2025. Beyond the competition itself, the event offered a memorable experience visiting Cumilla city and connecting with fellow programmers from different universities.",
+    image: "gallary/CoU_2025.jpg"
   },
   {
     id: 7,
-    title: "IIUC IUPC 2025",
-    description: "Back with Team Winter_Is_Coming for the IIUC Tech Fest. It was a tough competition, but we maintained our consistency to finish 5th out of 55 participating teams.",
-    image: "gallary/IIUC1.jpg"
-  },
-  {
-    id: 8,
-    title: "KUET IUPC 2025 Onsite",
-    description: "Participating as Team Binary_Brain at KUET, we competed against the top teams in Bangladesh. We finished in a respectable 26th place out of 160 teams in this national-level event.",
-    image: "gallary/KUET_IUPC.jpeg"
-  },
-  {
-    id: 9,
-    title: "IIUC IUPC 2025",
-    description: "Back with Team Winter_Is_Coming for the IIUC Tech Fest. It was a tough competition, but we maintained our consistency to finish 5th out of 55 participating teams.",
-    image: "gallary/IIUC2.jpg"
-  },
-  {
-    id: 10,
     title: "Industrial Attachment – Echologyx Ltd.",
-    description: "Completed a three-month industrial attachment at Echologyx Ltd., experiencing professional industry culture and teamwork for the first time. This period focused on understanding real-world software development practices, workplace collaboration, and how modern tech companies plan, test, and deliver products, alongside contributing to an AI-based interviewer project.",
+    description: "Completed a three-month industrial attachment at Echologyx Ltd., gaining first-hand exposure to professional software development practices, team collaboration, and real-world project workflows, including contributions to an AI-based interviewer system.",
     image: "gallary/Echologyx_Industrial_Attachment.jpeg"
   },
   {
-    id: 11,
-    title: "CUET IUPC CodeStorm 1.0",
-    description: "Competing on home turf as Team CUET_StraightOuttaSRH. This was Kinetic presents CodeStorm, where we broke into the Top 50 in a very competitive field of 100 teams.",
-    image: "gallary/CUET_StraightOuttaSRH.jpg"
-  },
-  {
-    id: 12,
-    title: "Prize Giving - Bangladesh Blockchain Olympiad 2025",
-    description: "We participated as Team CUET_R2S4. Our project was Finoly, a financial assistant system featuring gamified learning and an AI chatbot. We secured the 3rd place Bronze Medal; the ceremony in August showed us receiving the award from the honorable guests.",
-    image: "gallary/BCOLBD3.jpg"
-  },
-  {
-    id: 13,
-    title: "ICPC Asia Dhaka Regional 2025",
-    description: "Competing as Team Winter_Is_Coming, we faced off against the best teams in the region. We managed to secure 37th place out of 313 teams in a high-pressure onsite environment at the Dhaka Regional.",
-    image: "gallary/ICPC_BUBT.jpeg"
-  },
-  {
-    id: 14,
-    title: "ICPC Asia Dhaka Regional 2024",
-    description: "My first experience at the ICPC Regional level with Team CUET_Ternary_Bunch. We ranked 142nd out of 400 teams, which was a huge learning milestone in my competitive programming career.",
-    image: "gallary/ICPC_DIU_Ternary_Bunch.jpeg"
-  },
-  {
-    id: 15,
-    title: "DU AI Challenge - Robotronics Fest",
-    description: "Our team CUET_RSCube took part in this intense AI challenge. We worked on Object Detection in drone imagery and were thrilled to be ranked 1st out of over 50 competing teams.",
-    image: "gallary/CUET_RSCube.jpg"
-  },
-  {
-    id: 16,
-    title: "Thesis Predefense - CUET",
-    description: "As part of my undergraduate thesis, I presented my research on 'Exploiting Cross-Modal Attention for AI Generated News Detection' to a panel of professors and peers at CUET.",
-    image: "gallary/Thesis_Predefence.jpg"
-  },
-  {
-    id: 17,
-    title: "Prize Giving - Bangladesh Blockchain Olympiad 2025",
-    description: "We participated as Team CUET_R2S4. Our project was Finoly, a financial assistant system featuring gamified learning and an AI chatbot. We secured the 3rd place Bronze Medal; the ceremony in August showed us receiving the award from the honorable guests.",
-    image: "gallary/BCOLBD4.jpeg"
-  },
-  {
-    id: 18,
+    id: 8,
     title: "Industrial Attachment – Echologyx Ltd.",
-    description: "Completed a three-month industrial attachment at Echologyx Ltd., experiencing professional industry culture and teamwork for the first time. This period focused on understanding real-world software development practices, workplace collaboration, and how modern tech companies plan, test, and deliver products, alongside contributing to an AI-based interviewer project.",
+    description: "Another snapshot from my industrial attachment at Echologyx Ltd., reflecting my transition from academic learning to industry-level software engineering, with a focus on collaboration, responsibility, and applied problem-solving.",
     image: "gallary/Echologyx_Industrial_Attachment2.jpeg"
-  },
-  {
-    id: 19,
-    title: "IIUC IUPC 2025",
-    description: "Back with Team Winter_Is_Coming for the IIUC Tech Fest. It was a tough competition, but we maintained our consistency to finish 5th out of 55 participating teams.",
-    image: "gallary/IIUC3.jpg"
-  },
-  {
-    id: 20,
-    title: "Champions - CoU IUPC 2025",
-    description: "Representing CUET as Team EL_Diablo at the Comilla University CSE Fest, we had a great run and secured the 1st position out of 40 teams in the divisional programming contest.",
-    image: "gallary/Cou2.jpg"
-  },
-];
+  }
+]
+
 
 export const research = [
   {

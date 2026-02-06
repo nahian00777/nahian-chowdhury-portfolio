@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Sowrav Nath - Competitive Programmer',
-  description: 'Portfolio of Sowrav Nath, a Competitive Programmer and Software Developer.',
+  title: 'Nahian Chowdhury - Portfolio',
+  description: 'Portfolio of Nahian Chowdhury, a Competitive Programmer and Software Developer.',
   generator: 'Next.js',
   icons: {
     icon: [
