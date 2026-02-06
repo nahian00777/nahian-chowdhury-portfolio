@@ -25,8 +25,8 @@ This repository serves as:
 
 ## 🌐 Live Website
 
-_Deployed on Vercel_  
-(Deployment link will be added here)
+_Deployed on Vercel_ 
+https://nahian-chowdhury-portfolio.vercel.app/
 
 ---
 
