@@ -2,7 +2,7 @@ export const profileData = {
   name: 'Nahian Chowdhury',
   title: 'Full Stack Developer | Competitive Programmer',
   avatar: '/nahian.jpg',
-  email: 'nahianchowdhury00777@gmail.com',
+  email: 'nahian.c.chowdhury@gmail.com',
   phone: '+880-1756737742',
   birthday: 'March 01, 2001',
   location: 'Chittagong, Bangladesh',
@@ -234,7 +234,7 @@ export const projects = [
 
 
 export const contactData = {
-  email: 'nahianchowdhury00777@gmail.com',
+  email: 'nahian.c.chowdhury@gmail.com',
   phone: '+880 1756737742',
   location: 'Chattogram, Bangladesh',
   mapEmbedUrl:
