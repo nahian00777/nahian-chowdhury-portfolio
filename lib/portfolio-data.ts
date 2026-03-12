@@ -16,25 +16,24 @@ export const profileData = {
 
 export const aboutData = {
   description: [
-    `I'm a Computer Science and Engineering undergraduate with a strong interest in graduate-level study (MS/PhD) and 
-    research in machine learning and computer vision.`,
+    `I'm a Computer Science and Engineering undergraduate with a strong foundation in full-stack software engineering and a passion for building scalable, production-ready applications.`,
 
     `My current academic and research work focuses on image-based learning, including caricature generation, where 
     I explore deep learning methods for representation learning and visual transformation. I've gained hands-on 
-    experience applying deep learning techniques in practical, research-oriented settings.`,
+    experience applying deep learning techniques in practical settings and turning research prototypes into robust systems.`,
 
     `Over the past few years, I've built a strong foundation in algorithms and data structures through competitive 
     programming—solving 1500+ algorithmic problems across platforms like Codeforces (Specialist), LeetCode 
     (Top 13.82%), and CodeChef (3★). I've also represented my university in multiple national-level programming 
-    contests, which has strengthened my ability to reason rigorously and perform under pressure.`,
+    contests, which has strengthened my ability to reason rigorously and deliver high-quality code under pressure.`,
 
-    `Alongside my research interests, I bring a solid software engineering background with hands-on experience in 
-    backend development using Node.js, Express, and MongoDB. This allows me to translate research ideas into 
-    scalable and maintainable systems.`,
+    `Alongside my projects, I bring solid full-stack software engineering experience with backend development using 
+    Node.js, Express, and MongoDB, and frontend development using React. This allows me to design, implement, and 
+    deploy complete, scalable web applications and applied machine learning systems end-to-end.`,
 
-    `I am actively seeking research-oriented MS or PhD opportunities where I can contribute to applied machine 
-    learning systems while further developing my expertise in computer vision and deep learning.`
-
+    `I am actively seeking software engineering roles (full-stack, backend, or ML engineering) where I can contribute 
+    to building production-grade, scalable systems while further developing my expertise in applied machine learning, 
+    computer vision, and modern web technologies.`
   ],
   services: [
     {
