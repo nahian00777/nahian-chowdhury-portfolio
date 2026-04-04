@@ -1,6 +1,6 @@
 export const profileData = {
   name: 'Nahian Chowdhury',
-  title: 'Full Stack Developer | Competitive Programmer',
+  title: 'Full Stack Developer | Competitive Programmer | Deep Learning & Computer Vision',
   avatar: '/nahian.jpg',
   email: 'nahian.c.chowdhury@gmail.com',
   phone: '+880-1756737742',
@@ -16,7 +16,8 @@ export const profileData = {
 
 export const aboutData = {
   description: [
-    `I'm a Computer Science and Engineering undergraduate with a strong foundation in full-stack software engineering and a passion for building scalable, production-ready applications.`,
+    `I am an undergraduate student in Computer Science and Engineering with a strong foundation in software systems and 
+    a research interest in generative models, computer vision, and deep learning.`,
 
     `My current academic and research work focuses on image-based learning, including caricature generation, where 
     I explore deep learning methods for representation learning and visual transformation. I've gained hands-on 
@@ -31,9 +32,9 @@ export const aboutData = {
     Node.js, Express, and MongoDB, and frontend development using React. This allows me to design, implement, and 
     deploy complete, scalable web applications and applied machine learning systems end-to-end.`,
 
-    `I am actively seeking software engineering roles (full-stack, backend, or ML engineering) where I can contribute 
-    to building production-grade, scalable systems while further developing my expertise in applied machine learning, 
-    computer vision, and modern web technologies.`
+    `I am actively seeking Ph.D. or M.Sc. research positions where I can contribute to advancing the state of the art in 
+    computer vision, generative modeling and collaborate with faculty on high-impact, 
+    publication-driven research.`
   ],
   services: [
     {
@@ -95,7 +96,7 @@ export const education = [
     degree: "B.Sc. In Computer Science And Engineering",
     period: "March 2022 – Present",
     grade: "CGPA: 3.93/4.00",
-    description: "Ranked 4th in class with scholarship for merit in every terms",
+    description: "Ranked 3rd in class with scholarship for merit in every terms",
     courses: [
       "CSE 143 - Object Oriented Programming", "CSE 241 - Data Structures",
       "CSE 243 - Algorithms Design and Analysis", "CSE 251 - Database Management Systems",
@@ -127,7 +128,7 @@ export const achievements = [
     title: "Premier University Divisional IUPC 2024",
     period: "January 2024",
     location: "Chattogram, Bangladesh",
-    rank: "Ranked 3rd",
+    rank: "2nd Runner Up",
     link: "https://www.facebook.com/photo/?fbid=122114904332177822&set=a.122103497588177822",
     details: "Premier University Divisional IUPC 2024 • Team CUET_3_St00ges",
   },
@@ -185,11 +186,37 @@ export const skills = [
     ],
   },
   {
-    category: "Databases & Search",
+    category: "Web & Backend Development",
     tech: [
+      { name: "React.js", color: "bg-blue-500 text-white" },
+      { name: "Next.js", color: "bg-blue-500 text-white" },
+      { name: "Node.js", color: "bg-blue-500 text-white" },
+      { name: "Express.js", color: "bg-blue-500 text-white" },
+      { name: "REST APIs", color: "bg-blue-500 text-white" },
+      { name: "Tailwind CSS", color: "bg-blue-500 text-white" },
+    ],
+  },
+  {
+    category: "Databases",
+    tech: [
+      { name: "MongoDB", color: "bg-blue-500 text-white" },
       { name: "MySQL", color: "bg-blue-500 text-white" },
       { name: "PostgreSQL", color: "bg-blue-500 text-white" },
-      { name: "MongoDB", color: "bg-blue-500 text-white" },
+    ],
+  },
+  {
+    category: "Machine Learning & Computer Vision",
+    tech: [
+      { name: "Scikit-learn", color: "bg-blue-500 text-white" },
+      { name: "TensorFlow", color: "bg-blue-500 text-white" },
+      { name: "Keras", color: "bg-blue-500 text-white" },
+      { name: "PyTorch", color: "bg-blue-500 text-white" },
+      { name: "OpenCV", color: "bg-blue-500 text-white" },
+      { name: "NumPy", color: "bg-blue-500 text-white" },
+      { name: "Pandas", color: "bg-blue-500 text-white" },
+      { name: "Matplotlib", color: "bg-blue-500 text-white" },
+      { name: "Seaborn", color: "bg-blue-500 text-white" },
+      { name: "Jupyter Notebook", color: "bg-blue-500 text-white" },
     ],
   },
   {
@@ -199,36 +226,62 @@ export const skills = [
       { name: "GitHub", color: "bg-blue-500 text-white" },
       { name: "Docker", color: "bg-blue-500 text-white" },
       { name: "Linux (Ubuntu)", color: "bg-blue-500 text-white" },
+      { name: "Postman", color: "bg-blue-500 text-white" },
+      { name: "Kaggle", color: "bg-blue-500 text-white" },
     ],
   },
   {
-    category: "Web Frameworks & Libraries",
+    category: "Documentation & Productivity",
     tech: [
-      { name: "React.js", color: "bg-blue-500 text-white" },
-      { name: "Next.js", color: "bg-blue-500 text-white" },
-      { name: "Tailwind CSS", color: "bg-blue-500 text-white" },
-      { name: "Node.js", color: "bg-blue-500 text-white" },
-      { name: "Express.js", color: "bg-blue-500 text-white" },
-      { name: "REST APIs", color: "bg-blue-500 text-white" },
+      { name: "LaTeX", color: "bg-blue-500 text-white" },
+      { name: "Microsoft Office", color: "bg-blue-500 text-white" },
     ],
   },
 ];
 
 export const projects = [
   {
+    title: "Vocab Learner",
+    period: "January 2026",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Mongoose", "CSS"],
+    description: "An interactive vocabulary learning platform with custom vocab mountains, progress tracking, and word-level status management. Features word filtering, sorting, and speech synthesis for pronunciation support, backed by REST APIs for mountains, words, and learning progress.",
+    githubUrl: "https://github.com/nahian00777/Vocab-Learner"
+  },
+  {
+    title: "Cat and Penguin Classification with SVM, NN",
+    period: "September 2025",
+    technologies: ["Python", "OpenCV", "scikit-learn", "TensorFlow/Keras", "NumPy", "Matplotlib"],
+    description: "An image classification pipeline for cat vs penguin recognition using handcrafted HOG features. Applied StandardScaler and PCA for dimensionality reduction, trained SVM models (RBF/Linear) with GridSearchCV tuning, and evaluated a Neural Network baseline on PCA-transformed features.",
+    githubUrl: "https://www.kaggle.com/code/nahian00777/cat-and-penguin-classification-with-svm-nn"
+  },
+  {
+    title: "EcoCareer Platform",
+    period: "November 2025",
+    technologies: ["Next.js", "React", "Flask", "Python", "Tailwind CSS", "Docker", "REST APIs"],
+    description: "A full-stack AI-powered interviewer platform built during industrial attachment at Echologyx Ltd. Features LLM-powered interview logic, real-time job retrieval from multiple APIs, skill-based matching with relevance scores, and skill-gap analysis with learning recommendations.",
+    githubUrl: "https://github.com/Rakib-Hasan25/EcoCareer"
+  },
+  {
     title: "CodeJatra: A Competitive Programming WebApp",
     period: "February 2025",
-    technologies: ["React.js", "MongoDB", "Node.js", "Express.js", "Tailwind CSS"],
-    description: `CodeJatra is an innovative platform designed for competitive programming enthusiasts who thrive on challenges and the thrill of competition. Whether you're a seasoned coder or just starting out, CodeJatra offers an environment to hone your skills, engage in exciting duels, and climb the ranks on the leaderboard.`,
+    technologies: ["React", "MongoDB", "Node.js", "Express.js", "Tailwind CSS"],
+    description: "An innovative platform for competitive programming enthusiasts featuring coding duels and a dynamic leaderboard. Implements JWT-based authentication and integrates the Codeforces API for real-time user data and duel status.",
     githubUrl: "https://github.com/nahian00777/CodeJatra-A-Competitive-Programming-WebApp"
   },
   {
-    title: "CUET Class Routine Management System",
+    title: "CCRMS: CUET Class Routine Management System",
     period: "January 2025",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-    description: "A Class Routine Management System designed to make scheduling easier for class coordinators.",
-    githubUrl: "https://github.com/nahian00777/CUET-Class-Routine-Management-System",
-  }
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    description: "A web-based class routine management system to ease scheduling at CUET. Features PDF generation with pdf-lib for complex tabular schedules with merged cells, and automated testing with Playwright to validate PDF generation and application workflows.",
+    githubUrl: "https://github.com/nahian00777/CUET-Class-Routine-Management-System"
+  },
+  {
+    title: "Disease Prediction using Machine Learning",
+    period: "April 2024",
+    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
+    description: "A multiclass disease prediction pipeline on symptom-based data using a Random Forest Classifier. Model performance assessed with accuracy metrics and confusion matrix visualizations.",
+    githubUrl: "https://www.kaggle.com/code/nahian00777/disease-prediction"
+  },
 ];
 
 
@@ -295,14 +348,23 @@ export const galleryItems = [
 export const research = [
   {
     title: "Identity-Preserving Caricature Generation via Style-Based Generative Models",
-    period: "2024 - Present",
+    period: "2025 - Present",
     workshop: "Undergraduate Research Project",
     authors: "Nahian Chowdhury",
     keywords: "Caricature Generation, Generative Adversarial Networks, StyleGAN, Identity Preservation, Computer Vision",
-    description: "Conducted research on identity-preserving caricature generation using style-based generative models. Built a high-quality caricature dataset and applied geometric exaggeration techniques to decouple shape deformation from texture and style learning. Fine-tuned StyleGAN-based architectures to transfer caricature styles while preserving identity-critical attributes such as facial structure, glasses, and accessories. Evaluated generation quality using FID and identity consistency metrics, with a focus on controllable exaggeration and realism in synthesized caricatures.",
+    description: "Conducting research on identity-preserving caricature generation using style-based generative models. Using the WebCaricature dataset and applying geometric exaggeration techniques, including affine transformation, to warp facial structure. Fine-tuning StyleGAN-based architectures to transfer caricature style while preserving identity-critical attributes such as facial structure, glasses, and accessories. Exploring Gatys Neural Style Transfer (NST) for style transformation and improving output quality using ESRGAN.",
+    link: ""
+  },
+  {
+    title: "Arabic Diacritization via ASR-Guided Ensemble Learning",
+    period: "Mar 2026",
+    workshop: "KSAA-2026 Shared Task",
+    authors: "Nahian Chowdhury",
+    keywords: "Arabic Diacritization, ASR, Ensemble Learning, Whisper, Transformer, NLP",
+    description: "Developed an ASR-guided ensemble pipeline combining a fine-tuned Diac Transformer with Whisper ASR for Arabic diacritization. Achieved official test results of DER 8.23% and WER 30.37% on the KSAA-2026 evaluation set. Status: Completed; manuscript in preparation.",
     link: ""
   }
-]
+];
 
 export const experiences = [
   {
@@ -310,14 +372,61 @@ export const experiences = [
     role: "Software Engineering Intern (Industrial Attachment)",
     period: "August 2025 – November 2025",
     companyUrl: "https://echologyx.com/",
-    description: "Gained hands-on experience in a professional software development environment and exposure to industry workflows. Contributed to the full-stack development of an AI-powered interviewer platform using Next.js, focusing on interview flow design, frontend integration, and AI-driven interaction logic. Received theoretical illustrations and live demos on A/B testing methodologies used in industry-level product optimization.",
+    description: "Gained hands-on experience in a professional software development environment and exposure to industry workflows. Built EchoCareer, a full-stack AI-powered interviewer platform in Next.js with LLM-powered interview logic, real-time job retrieval, skill-based matching, and skill-gap analysis. Received theoretical illustrations and live demos on A/B testing methodologies used in industry-level product optimization.",
     skills: [
       "Next.js",
       "Full-Stack Web Development",
       "AI Interview Systems",
       "LLM Integration",
+      "Flask",
+      "Docker",
       "Agile Workflow",
       "Industry Software Practices"
     ]
   }
+];
+
+export const certifications = [
+  {
+    title: "Generative Adversarial Networks (GANs) Specialization",
+    issuer: "DeepLearning.AI",
+    period: "Apr 2025",
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/KEYNF35MLCB4"
+  },
+  {
+    title: "Convolutional Neural Networks",
+    issuer: "DeepLearning.AI",
+    period: "Mar 2025",
+    link: "https://www.coursera.org/account/accomplishments/verify/JKGA1VUF5HC7"
+  },
+  {
+    title: "Neural Networks and Deep Learning",
+    issuer: "DeepLearning.AI",
+    period: "Mar 2025",
+    link: "https://www.coursera.org/account/accomplishments/verify/35IVPOMVNXRV"
+  },
+  {
+    title: "Machine Learning Specialization",
+    issuer: "DeepLearning.AI",
+    period: "Feb 2025",
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/UO9C65SQY8X3"
+  },
+  {
+    title: "Unsupervised Learning, Recommenders, Reinforcement Learning",
+    issuer: "Stanford University",
+    period: "Feb 2025",
+    link: "https://www.coursera.org/account/accomplishments/verify/AHOPRW8ICB5Z"
+  },
+  {
+    title: "Advanced Learning Algorithms",
+    issuer: "Stanford University",
+    period: "Jan 2025",
+    link: "https://www.coursera.org/account/accomplishments/verify/LPTCHZVPR3OJ"
+  },
+  {
+    title: "Supervised Machine Learning: Regression and Classification",
+    issuer: "Stanford University",
+    period: "Dec 2024",
+    link: "https://www.coursera.org/account/accomplishments/verify/REN4E3EOQGI6"
+  },
 ];

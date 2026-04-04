@@ -1,25 +1,42 @@
 'use client'
 
+import { useState } from 'react'
 import { FileText, Download, Maximize2, ExternalLink } from 'lucide-react'
 
 export function ResumeSection() {
-  const resumeUrl = '/Nahian_Chowdhury_Resume.pdf'
+  const [activeDoc, setActiveDoc] = useState<'resume' | 'cv'>('resume')
+
+  const docs = {
+    resume: {
+      label: 'Resume',
+      file: '/Nahian_Chowdhury_Resume.pdf',
+      downloadName: 'Nahian_Chowdhury_Resume.pdf',
+      description: 'Concise one-page summary of qualifications and experience',
+    },
+    cv: {
+      label: 'Full CV',
+      file: '/Nahian_Chowdhury_CV.pdf',
+      downloadName: 'Nahian_Chowdhury_CV.pdf',
+      description: 'Detailed academic and research background',
+    },
+  }
+
+  const current = docs[activeDoc]
 
   const handleFullscreen = () => {
-    window.open(resumeUrl, '_blank')
+    window.open(current.file, '_blank')
   }
 
   return (
     <div className="space-y-6 animate-in fade-in duration-700">
-      {/* Header with Actions */}
+      {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground">Nahian Chowdhury Resume</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground">Nahian Chowdhury</h2>
           <div className="w-10 h-1 bg-accent rounded-full mt-2" />
         </div>
-        
+
         <div className="flex items-center gap-3">
-          {/* Fullscreen Toggle */}
           <button
             onClick={handleFullscreen}
             className="hidden md:flex items-center gap-2 px-4 py-2.5 bg-secondary border border-border text-foreground rounded-xl font-medium hover:bg-secondary/80 transition-all"
@@ -29,41 +46,59 @@ export function ResumeSection() {
             <span>Fullscreen</span>
           </button>
 
-          {/* Primary Download Button */}
           <a
-            href={resumeUrl}
-            download="Nahian_Chowdhury_Resume.pdf"
-            className="flex items-center justify-center gap-2 px-6 py-2.5 bg-accent text-accent-foreground rounded-xl font-medium hover:opacity-90 hover:shadow-lg hover:shadow-accent/20 transition-all flex-1 md:flex-none"
+            href={current.file}
+            download={current.downloadName}
+            className="flex items-center justify-center gap-2 px-6 py-2.5 bg-accent text-accent-foreground rounded-xl font-medium hover:opacity-90 transition-all flex-1 md:flex-none"
           >
             <Download className="w-4 h-4" />
-            <span>Download PDF</span>
+            <span>Download</span>
           </a>
         </div>
       </div>
 
-      {/* Modern PDF Container */}
+      {/* Toggle */}
+      <div className="flex flex-col sm:flex-row gap-3">
+        {(Object.keys(docs) as Array<'resume' | 'cv'>).map((key) => (
+          <button
+            key={key}
+            onClick={() => setActiveDoc(key)}
+            className={`flex-1 flex flex-col items-start px-5 py-4 rounded-xl border transition-all text-left ${
+              activeDoc === key
+                ? 'border-accent bg-accent/10 text-foreground'
+                : 'border-border bg-secondary text-muted-foreground hover:border-accent/50 hover:text-foreground'
+            }`}
+          >
+            <span className={`text-sm font-bold mb-0.5 ${activeDoc === key ? 'text-accent' : ''}`}>
+              {docs[key].label}
+            </span>
+            <span className="text-xs">{docs[key].description}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* PDF Preview */}
       <div className="group relative w-full h-150 md:h-225 rounded-2xl overflow-hidden border border-border bg-secondary/30 shadow-inner">
-        
-        {/* The PDF Preview */}
         <iframe
-          src={`${resumeUrl}#view=FitH&toolbar=0`}
-          title="Resume Preview"
+          key={current.file}
+          src={`${current.file}#view=FitH&toolbar=0`}
+          title={`${current.label} Preview`}
           className="w-full h-full border-none"
         />
 
-        {/* Desktop Overlay: Zoom Prompt */}
+        {/* Desktop zoom hint */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 hidden md:block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="px-4 py-2 bg-background/90 backdrop-blur-md border border-border rounded-full text-xs font-medium text-muted-foreground shadow-xl">
-             Use Ctrl + Scroll to Zoom inside the preview
+            Use Ctrl + Scroll to Zoom inside the preview
           </div>
         </div>
 
-        {/* Mobile Alternative (Since iframes are tiny on phones) */}
+        {/* Mobile fallback */}
         <div className="absolute inset-0 flex md:hidden flex-col items-center justify-center bg-secondary/95 p-8 text-center backdrop-blur-sm">
           <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-4">
             <FileText className="w-8 h-8 text-accent" />
           </div>
-          <h4 className="text-lg font-bold text-foreground mb-2">Resume Preview</h4>
+          <h4 className="text-lg font-bold text-foreground mb-2">{current.label}</h4>
           <p className="text-sm text-muted-foreground mb-6">
             For the best reading experience, please open the document directly.
           </p>

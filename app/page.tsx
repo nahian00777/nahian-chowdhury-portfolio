@@ -14,6 +14,7 @@ import { ResearchSection } from '@/components/research-section'
 import { ResumeSection } from '@/components/resume-section'
 import SkillsSection from '@/components/skills_section'
 import { GallerySection } from '@/components/galary_section'
+import { CertificationSection } from '@/components/certification-section'
 
 import {
   profileData,
@@ -22,6 +23,7 @@ import {
   contactData,
   achievements,
   projects,
+  certifications
 } from '@/lib/portfolio-data'
 import { Footer } from '@/components/footer'
 
@@ -38,6 +40,7 @@ export default function Home() {
     'experience', 
     'research', 
     'resume', 
+    'certifications',
     'contact'
   ]
 
@@ -115,6 +118,7 @@ export default function Home() {
               {activeSection === 'experience' && <ExperienceSection />}
               {activeSection === 'research' && <ResearchSection />}
               {activeSection === 'resume' && <ResumeSection />}
+              {activeSection === 'certifications' && <CertificationSection />}
               {activeSection === 'contact' && <ContactSection data={contactData} />}
             </div>
           </main>
