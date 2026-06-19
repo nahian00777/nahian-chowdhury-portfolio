@@ -241,6 +241,13 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Caricature Generation with DualStyleGAN",
+    period: "June 2026",
+    technologies: ["PyTorch", "DualStyleGAN", "pSp Encoder", "BiSeNet", "RealESRGAN", "OpenCV", "dlib", "Python"],
+    description: "An end-to-end caricature generation pipeline using DualStyleGAN (CVPR 2022), encoding facial identity via a pSp encoder into the W+ latent space and blending intrinsic and extrinsic style codes for styled output. Built a custom accessory preservation pipeline using BiSeNet face parsing to segment accessories dropped by the face-centric encoder, then applied landmark-guided affine warping and feather blending with LAB color transfer to recompose them onto the caricature. Enhanced final output with RealESRGAN 4× upscaling.",
+    githubUrl: "https://www.kaggle.com/code/nahian00777/caricature-generation-with-dual-stylegan"
+  },
+  {
     title: "Vocab Learner",
     period: "January 2026",
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Mongoose", "CSS"],
